@@ -1,0 +1,267 @@
+h1 {
+    font-size: 20px;
+}
+
+h1 img {
+    width: 30px;
+    height: 30px;
+}
+
+.form-details {
+    /* background: blue; */
+    height: 60vh;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    /* align-items: center */
+    width: 100%;
+    /* margin: 20px auto; */
+    font-family: sans-serif;
+}
+
+.form_wrapper {
+    /* background: red; */
+    position: absolute;
+    width: 30%;
+    right: 35%;
+    top: 7%;
+}
+
+#signup-info {
+    margin-bottom: 20px;
+    text-align: center;
+    margin: 20px auto;
+    font-size: 20px;
+}
+
+#login_link {
+    font-size: 20px;
+    text-align: center;
+    padding: 0;
+    margin: 20px auto;
+}
+
+#login_link a:hover {
+    text-decoration: underline;
+}
+
+input {
+    height: 35px;
+    border: 1px solid rgb(165, 160, 160);
+    border-radius: 2px;
+    /* margin-top: 10px; */
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+label {
+    width: 30%;
+    margin: 0 30px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+label b {
+    color: red;
+    opacity: .8;
+    font-size: 15px;
+}
+
+#submit {
+    background: #ffc740;
+    color: #00AAFF;
+    margin-top: 20px;
+    height: 40px;
+    border: 1px solid #ffc740;
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#submit:hover {
+    border: 1px solid #ddd;
+    color: #fff;
+}
+
+
+@media screen and (max-width: 600px) {
+    .questioner-details {
+        height: 75vh;
+        z-index: 1;
+    }
+
+    h1 {
+        font-size: 80%;
+    }
+
+    #signup-info, label {
+        font-size: 15px;
+    }
+
+    h1 img {
+        width: 15%;
+        height: 15%;
+    }
+
+    .form_wrapper {
+        width: 60%;
+        right: 20%;
+    }
+
+    .assymetric {
+        height: 5vh;
+        border-left: 100vw solid #00AAFF;
+        border-bottom: 10vh solid #fff;
+    }
+
+    footer, #login_link {
+        font-size: 15px;
+    }
+
+    #submit {
+        margin-top: 5px;
+    }
+
+    .form-details {
+        margin-top: 0;
+        height: 70vh;
+    }
+
+    .form_wrapper {
+        top: 5%;
+    }
+
+    #signup-info {
+        margin: 15px auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .questioner-details {
+        height: 75vh;
+        z-index: 1;
+    }
+
+    label {
+        width: 60%;
+    }
+
+    h1 {
+        font-size: 80%;
+    }
+
+    #signup-info, label {
+        font-size: 15px;
+    }
+
+    h1 img {
+        width: 15%;
+        height: 15%;
+    }
+
+    .form_wrapper {
+        width: 60%;
+        right: 20%;
+    }
+
+    .assymetric {
+        height: 5vh;
+        border-left: 100vw solid #00AAFF;
+        border-bottom: 10vh solid #fff;
+    }
+
+    footer, #login_link {
+        font-size: 15px;
+    }
+
+    #submit {
+        margin-top: 5px;
+    }
+
+    .form-details {
+        margin-top: 0;
+        height: 70vh;
+    }
+
+    .form_wrapper {
+        top: 5%;
+    }
+
+    #signup-info {
+        margin: 15px auto;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 600px) {
+    #signup-info, label {
+        font-size: 17px;
+    }
+
+    h1 img {
+        width: 15%;
+        height: 15%;
+    }
+
+    .form_wrapper {
+        width: 60%;
+        right: 20%;
+    }
+
+    footer, #login_link {
+        font-size: 15px;
+    }
+
+    .form-details {
+        height: 70vh;
+    }
+
+    .form_wrapper {
+        top: 8%;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1000px) {
+    #signup-info, label {
+        font-size: 17px;
+    }
+
+    h1 img {
+        width: 15%;
+        height: 15%;
+    }
+
+    .form_wrapper {
+        width: 60%;
+        right: 20%;
+    }
+
+    label {
+        margin-top: 5px;
+    }
+
+    .form-details {
+        height: 70vh;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    h1 img {
+        width: 15%;
+        height: 15%;
+    }
+
+    .form_wrapper {
+        width: 50%;
+        right: 25%;
+    }
+
+    label {
+        margin-top: 5px;
+    }
+
+    .form-details {
+        height: 70vh;
+    }
+}

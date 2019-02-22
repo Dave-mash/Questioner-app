@@ -1,0 +1,545 @@
+.container {
+    width: 80%;
+    margin: 10px auto;
+}
+
+button {
+    cursor: pointer;
+}
+
+.meetup-info-wrap {
+    margin-top: 20px;
+    width: 100%;
+    height: 200px;
+    /* background: red; */
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.meetup-info {
+    display: flex;
+}
+
+.meetup-info h4, p {
+    /* margin: 0; */
+}
+
+.going {
+    display: flex;
+    flex-direction: column;
+    flex: 25%;
+}
+
+.meetup-title {
+    /* background: red; */
+    flex: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.meetup-title h2 {
+    font-size: 35px;
+    opacity: .9;
+    margin: 5px 0;
+}
+
+.meetup_info {
+    flex: 35%;
+}
+
+.meetup_info p {
+    color: #666;
+}
+
+.hosts-info span {
+    color: #00AAFF;
+}
+
+.hosts-info p {
+    /* font-size: 10px; */
+}
+
+.hosts {
+    display: flex;
+    flex: 65%;
+    color: #666;
+}
+
+.share {
+    flex: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.share img {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+.share h5 {
+    /* font-size: 8px; */
+}
+
+.btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 70%;
+}
+
+.buttons {
+    height: 35%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons button {
+    text-align: center;
+    width: 45%;
+    height: 80%;
+    font-size: 17px;
+    border: none;
+    background: #00AAFF;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.btns h4 {
+    opacity: .8;
+    /* font-size: 9px; */
+}
+
+.meetup-date {
+    background: #fff;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    display: flex;
+    flex: 25%;
+    justify-content: center;
+}
+
+.date {
+    width: 80%;
+}
+
+#calender {
+    color: #00AAFF;
+    width: 60%;
+}
+
+#calender:hover {
+    opacity: .8;
+}
+
+.meetup-date {
+    /* background: blue; */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.meetup-date p {
+    font-size: 18px;
+    color: #666;
+    text-align: left;
+}
+
+.meetup-details {
+    display: flex;
+    /* background: red; */
+    margin-top: 10px;
+    background: rgb(247, 247, 247);
+}
+
+.details {
+    flex: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+    /* background: blue; */
+    padding: 20px;
+}
+
+.details p {
+    padding-top: 20px;
+    width: 90%;
+    font-size: 20px;
+    opacity: .9;
+}
+
+.meetup-details h3 {
+    margin: 10px 0;
+    font-size: 25px;
+    opacity: .8;
+}
+
+.que-h3 {
+    margin-top: 10px;
+    margin-right: 3%;
+    height: 70px;
+    width: 13%;
+    display: flex;
+    justify-content: space-between
+}
+
+.question-item-wrapper {
+    margin-bottom: 30px;
+}
+
+#comments {
+    font-size: 15px;
+    opacity: .6;
+}
+
+.border-line {
+    background: #00AAFF;
+    width: 4px;
+}
+
+.meetup-questions h3 {
+    font-size: 25px;
+    margin: 15px 0;
+    font-weight: 400;
+}
+
+.meetup-questions {
+    /* background: blue; */
+    display: flex;
+    margin: 30px 10px;
+    width: 100%;
+}
+
+.meetup-questions h3, .vote, i {
+    opacity: .8;
+}
+
+.vote {
+    margin-right: 3%;
+}
+
+.votes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+.vote p {
+    text-align: center;
+    font-size: 15px;
+}
+
+.vote img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.question {
+    display: flex;
+    flex-direction: column;
+    /* background: red; */
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.que-1, .que-2 {
+    /* background: red; */
+    font-size: 20px;
+    display: flex;
+    margin: 20px 0;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.comment {
+    padding: 5px 5px;
+    margin: 30px 20px;
+    background: rgb(245, 245, 245);
+}
+
+.comments p{
+    opacity: .9;
+    /* background: red; */
+    margin-bottom: 10px;
+}
+
+#form-comment {
+    /* background: red; */
+    width: 90%;
+}
+
+#form-comment textarea {
+    height: 50px;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+    /* background: red; */
+    padding-top: 30px;
+    width: 65%;
+}
+
+form label {
+    opacity: .8;
+    margin-bottom: 5px;
+}
+
+textarea {
+    height: 150px;
+}
+
+form button {
+    cursor: pointer;
+    margin-top: 25px;
+    width: 30%;
+    font-size: 17px;
+    height: 35px;
+    border: none;
+    background: #00AAFF;
+    color: #fff;
+    border-radius: 2px;
+}
+
+.mins p {
+    padding: 10px;
+}
+
+.profile {
+    /* background: green; */
+    width: 30%;
+}
+
+button:hover {
+    background: rgba(1, 170, 255, 0.842);
+}
+
+@media screen and (max-width: 600px) {
+    .meetup-info-wrap {
+        /* background: red; */
+        height: 100px;
+    }
+
+    .votes {
+        display: none;
+    }
+
+    .profile {
+        /* background: blue; */
+        width: 100%;
+    }
+
+    .profile p {
+        font-size: 8px;
+    }
+
+    .meetup-info h4, p {
+        font-size: 11px;
+    }
+
+    .meetup-title h2 {
+        font-size: 10px;
+        margin: 5px 0;
+    }
+
+    .meetup_info p {
+        font-size: 8px;
+    }
+
+    .hosts-info p {
+        font-size: 10px;
+    }
+
+    .share h5 {
+        font-size: 8px;
+    }
+
+    .buttons button {
+        width: 30px;
+        height: 15px;
+        font-size: 8px;
+    }
+
+    .btns h4 {
+        font-size: 9px;
+    }
+
+    .date {
+        width: 100%;
+    }
+
+    .meetup-date p {
+        font-size: 8px;
+    }
+
+    .meetup-date {
+        height: 20%;
+        padding: 10px;
+        flex: 40%;
+    }
+
+    .details {
+        /* background: red; */
+        flex: 70%;
+        padding-left: 10px;
+    }
+
+    .details h3 {
+        width: 40%;
+    }
+
+    .details p {
+        padding: 10px 0;
+        width: 90%;
+        font-size: 11px;
+    }
+
+    .meetup-details h3, .meetup-questions h3 {
+        margin: 5px 0;
+        font-size: 14px;
+        opacity: .9;
+    }
+
+    .meetup-questions {
+        margin: 10px 10px;
+    }
+    
+    .profile {
+        /* background: green; */
+        width: 65%;
+    }
+
+    .profile p {
+        /* background: maroon; */
+        width: 100%;
+        justify-content: left
+    }
+
+    .meetup-questions h3, .vote, i {
+        font-size: 10px;
+    }
+
+    .que-h3 {
+        flex: 25%;
+        height: 25px;
+    }
+
+    #num-que {
+        font-size: 8px;
+        margin-right: 5px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .border-line {
+        width: 2px;
+    }
+
+    .vote {
+        margin-right: 10px;
+        height: 10%;
+    }
+
+    .votes {
+        height: 10%;
+    }
+
+    .vote p {
+        font-size: 8px;
+    }
+
+    .vote img {
+        width: 17px;
+        height: 17px;
+        cursor: pointer;
+    }
+    .que-1, .que-2 {
+        margin-bottom: 20px;
+    }
+
+    .comment {
+        padding: 5px 5px;
+        margin: 10px 0;
+    }
+
+    .comments p{
+        margin-bottom: 10px;
+    }
+
+    form label {
+        font-size: 11px;
+        opacity: .8;
+        margin-bottom: 5px;
+    }
+
+    #form-comment {
+        /* background: red; */
+        margin-left: 50px;
+    }
+
+    textarea {
+        height: 80px;
+    }
+
+    #comments {
+        font-size: 11px;
+    }
+
+    form button {
+        font-size: 8px;
+        margin-top: 5px;
+        width: 40%;
+        height: 25px;
+    }
+
+    form button:hover {
+        background: rgba(1, 170, 255, 0.842);
+    }
+}
+
+
+@media screen and (max-width: 1000px) and (min-width: 600px) {
+    #num-que {
+        font-size: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .meetup-date {
+        flex: 50%;
+        height: 50%;
+        /* background: red; */
+    }
+
+    .date {
+        /* background: red; */
+        width: 100%;
+    }
+
+    .que-h3 {
+        padding-right: 0;
+        width: 35%;
+        height: 60%;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1000px) {
+    #num-que {
+        font-size: 20px;
+    }
+
+    .que-h3 {
+        height: 60%;
+    }
+}

@@ -1,0 +1,83 @@
+.meetups {
+    padding: 10px;
+    border-top: 2px solid #FFBC00;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-bottom: #fff;
+}
+
+.create {
+    /* background: red; */
+    padding-right: 100px;
+    padding-left: 40px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+
+.mini {
+    padding: 10px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 90%;
+    border-radius: 3px;
+    font-size: 14px;
+    background: #666;
+    color: #fff;
+    width: 70%;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 32%;
+    display: flex;
+}
+
+.mini button {
+    width: 40%;
+}
+
+.edit-btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.mini-menu p {
+    font-size: 17px;
+    width: 100%;
+    text-align: center;
+}
+
+.mini-menu p:hover {
+    color: #00aaff;
+    cursor: pointer;
+}
+
+#menu {
+    cursor: pointer;
+    opacity: .9;
+    position: absolute;
+    display: flex;
+    top: 10px;
+    right: 10px;
+    text-decoration: underline;
+}
+
+#menu b {
+    color: blue;
+    padding-right: 10px;
+}
+
+.meet_wrap {
+    position: relative;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+.admin-meetups {
+    margin-top: 50px;
+}

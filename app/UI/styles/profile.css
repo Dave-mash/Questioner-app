@@ -1,0 +1,275 @@
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.items {
+    border: 1px solid #ccc;
+    display: flex;
+    box-sizing: border-box;
+    /* background: red; */
+    margin-top: 20px;
+    width: 50%;
+    height: 35%;
+    flex-wrap: wrap;
+}
+
+.name {
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    /* background: blue; */
+}
+
+h2 {
+    margin-left: 10px;
+    height: 10%;
+}
+
+.row-sec {
+    display: flex;
+    /* background: blue; */
+    /* height: 50%; */
+    background: #fff;
+    display: flex;
+}
+
+.avatar {
+    display: flex;
+    flex-direction: column;
+    flex: 30%;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+    text-align: center;
+    height: 55%;
+    /* background: blue; */
+}
+
+.avatar img {
+    width: 45%;
+    height: 55%;
+}
+
+.rows {
+    flex: 70%;
+    height: 100%;
+}
+
+h4 {
+    margin: 10px 0;
+    padding-left: 10px;
+    opacity: .8;
+}
+
+p, a {
+    opacity: .8;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+.row-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 50%;
+}
+
+.schedule {
+    padding-bottom: 10px;
+    flex: 50%;
+}
+
+.location {
+    padding-bottom: 10px;
+    flex: 50%;
+    border-bottom: 1px solid #ccc;
+}
+
+.profile img {
+    width: 50px;
+    height: 50px;
+}
+
+.mins {
+    text-align: left;
+    font-size: 15px;
+}
+
+.mins i {
+    width: 100%;
+    text-align: left;
+    padding-left: 10px;
+    opacity: .5;
+}
+
+.mins p {
+    /* background: red; */
+    width: 100%;
+    margin: 0;
+    font-size: 15px;
+}
+
+.comments {
+    margin-left: 50px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    /* background: red; */
+    width: 30%;
+    margin: 10px;
+}
+
+.meetup-questions {
+    justify-content: center;
+}
+
+.question {
+    width: 60%;
+}
+
+.row-two {
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 50%;
+}
+
+.row-sec p, .row-sec h4 {
+    font-size: 18px;
+    opacity: .8;
+    font-size: 15px;
+}
+
+h2 {
+    font-size: 17px;
+}
+
+.questions {
+    display: flex;
+    flex-direction: column;
+    flex: 50%;
+}
+
+.post {
+    flex: 50%;
+    border-top: 1px solid #ccc;
+}
+
+#comments {
+    /* background: blue; */
+    padding-left: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    #title_img {
+        display: block;
+        width: 30px;
+        height: 30px;
+    }
+
+    #num-que {
+        font-size: 1px;
+    }
+
+    p, h4 {
+        font-size: 8px;
+    }
+
+    .rows, .avatar {
+        display: none;
+    }
+
+    .items {
+        border: none;
+        /* background: red; */
+        display: none;
+        /* width: 90%; */
+    }
+
+    .avatar {
+        /* background: red; */
+        justify-content: space-around;
+    }
+
+    .avatar img {
+        width: 45%;
+        height: 40%;
+    }
+
+    .que-h3 {
+        display: flex;
+    }
+
+    .profile {
+        width: 80%;
+        /* background: red; */
+    }
+
+    .question {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .question-item {
+        font-size: 13px;
+    }
+
+    .mins p {
+        font-size: 11px;
+    }
+
+    .profile img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .comment p {
+        font-size: 13px;
+    }
+
+    .avatar a {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .items {
+        height: 70%;
+        width: 70%;
+        display: flex;
+    }
+
+    .que-h3 {
+        width: 20%;
+        /* background: red; */
+        display: flex;
+        /* display: none; */
+    }
+
+    .profile {
+        font-size: 14px;
+        width: 50%;
+    }
+
+    #num-que {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .avatar a {
+        font-size: 17px;
+    }
+
+    p, h4 {
+        font-size: 18px;
+    }
+
+    .que-h3 {
+        width: 15%;
+
+    }
+}

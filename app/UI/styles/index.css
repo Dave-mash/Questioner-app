@@ -1,0 +1,277 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+p, h1, b, a {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif
+}
+
+a {
+    text-decoration: none;
+}
+
+b {
+    letter-spacing: 2px;
+}
+
+h1 {
+    position: absolute;
+    top: 0;
+    width: 20%;
+    /* letter-spacing: 2px; */
+    margin-left: 20px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+h1 a {
+    color: #fff;
+}
+
+h1 img {
+    width: 50px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+.container {
+    opacity: .9;
+    z-index: 2;
+    position: relative;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.questioner_info-wrapper {
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.questioner_info {
+    background: #00AAFF;
+    /* background: blue; */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.questioner-details {
+    /* background: blue; */
+    height: 60vh;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center
+}
+
+.questioner-details p {
+    margin-top: 50px;
+    letter-spacing: 2px;
+    font-size: 23px;
+    line-height: 30px;
+    width: 50%;
+    text-align: justify;
+}
+
+.questioner-buttons {
+    /* background: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.questioner-buttons button {
+    margin: 0 50px;
+    height: 60px;
+    width: 140px;
+    background: none;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.dashboard {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    z-index: 1;
+}
+
+.dashboard a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.dashboard a:hover {
+    text-decoration: underline;
+}
+
+button a {
+    color: #fff;
+}
+
+.questioner-buttons button:hover, button a:hover {
+    background: #FFC740;
+    color: #00AAFF;
+    border: none;
+}
+
+.main_title {
+    width: 100%;
+}
+
+#background_img {
+    position: absolute;
+    top: 0;
+    opacity: .9;
+    width: 100vw;
+    height: 100vh;
+    transform: rotate(180deg)
+}
+
+.assymetric {
+    height: 11vh;
+    /* width: 100vw; */
+    border-left: 100vw solid #00AAFF;
+    border-bottom: 30vh solid #fff;
+}
+
+footer {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    opacity: .7;
+}
+
+@media screen and (max-width: 600px) {
+    .questioner-details p {
+        font-size: 15px;
+        letter-spacing: 0;
+    }
+
+    .questioner-details {
+        height: 75vh
+    }
+
+    h1 {
+        font-size: 75%;
+    }
+
+    h1 img {
+        width: 20%;
+        height: 20%;
+    }
+
+    .questioner-buttons button {
+        font-size: 15px;
+        width: 80px;
+        height: 35px;
+    }
+
+    .assymetric {
+        height: 5vh;
+        border-left: 100vw solid #00AAFF;
+        border-bottom: 10vh solid #fff;
+    }
+
+    footer {
+        font-size: 15px;
+    }
+
+    .questioner-details p {
+        line-height: 20px;
+    }
+
+    .questioner-details b {
+        font-size: 13px;
+        margin-top: 20px;
+    }
+
+    .questioner-buttons button:hover {
+        border: none;
+    }
+}
+
+@media screen and (max-width: 900px) and (min-width: 600px) {
+    h1 {
+        font-size: 100%;
+    }
+
+    h1 img {
+        width: 20%;
+        height: 20%;
+    }
+
+    .questioner-buttons button {
+        font-size: 15px;
+        width: 80px;
+        height: 35px;
+    }
+
+    .questioner-details p {
+        font-size: 15px;
+        letter-spacing: 0;
+    }
+
+    .assymetric {
+        height: 5vh;
+        border-left: 100vw solid #00AAFF;
+        border-bottom: 10vh solid #fff;
+    }
+
+    .questioner-details {
+        height: 75vh
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 900px) {
+    h1 {
+        font-size: 25px;
+    }
+
+    .questioner-details p {
+        font-size: 18px;
+        letter-spacing: 0;
+    }
+
+    .assymetric {
+        height: 5vh;
+        border-left: 100vw solid #00AAFF;
+        border-bottom: 10vh solid #fff;
+    }
+
+    .questioner-details {
+        height: 75vh
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    h1 img {
+        width: 20%;
+        height: 20%;
+    }
+
+    .assymetric {
+        border-left: 100vw solid #00AAFF;
+        border-bottom: 20vh solid #fff;
+    }
+
+    .questioner-details {
+        height: 75vh
+    }
+}
