@@ -15,11 +15,11 @@ class UserValidator:
 
     def errorHandler(self, error_name):
         errors = {
-            "email": "Invalid email address!",
             "first_name": "Your first name should be between 4 to 24 characters long!",
             "last_name": "Your last name should be between 4 to 24 characters long!",
             "othername": "Your othername should be between 4 to 24 characters long!",
             "username": "Your username should be between 4 to 24 characters long!",
+            "email": "Invalid email address!",
             "password": "Weak password!",
             "phoneNumber": "Use valid numbers for phone number",
             "unmatching_pass": "Your passwords don't match!",

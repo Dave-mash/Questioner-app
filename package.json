@@ -1,0 +1,25 @@
+{
+  "name": "questioner-app",
+  "version": "1.0.0",
+  "description": "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app/server/server.js",
+    "dev": "nodemon app/server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dave-mash/Questioner-app.git"
+  },
+  "author": "dave mash",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Dave-mash/Questioner-app/issues"
+  },
+  "homepage": "https://github.com/Dave-mash/Questioner-app#readme",
+  "dependencies": {
+    "eslint": "^5.14.1",
+    "express": "^4.16.4",
+    "nodemon": "^1.18.10"
+  }
+}
