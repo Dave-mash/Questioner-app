@@ -49,7 +49,8 @@ form.addEventListener('submit', (e) => {
             return option.className = 'highlighter'
         }
     }
-// <b class="error_message"></b>
+    
+    // highlights empty fields
     emptyFields = () => {
         span.innerHTML = '';
         fields = Object.entries(user);
@@ -67,6 +68,7 @@ form.addEventListener('submit', (e) => {
         });
     }
 
+    // validates fields
     validator = (pairs, jsonResponse) => {
         pairs.forEach(pair => {
             
@@ -115,24 +117,3 @@ fetch('http://127.0.0.1:5000/api/v2/users').then(res => {
 ).then(jsonResponse => {
     console.log(jsonResponse.users)
 });
-
-
-
-// if (!input) {
-//     if (jsonResponse.error === "please enter valid othername!") {
-//         highlighter(document.getElementById('othername'))
-//         console.log(document.getElementById('othername'))
-//     } else if (jsonResponse.error === "please enter valid username!") {
-//         highlighter(document.getElementById('username'))
-//         console.log(document.getElementById('username'))
-//     } else if (jsonResponse.error === "please enter valid first name!") {
-//         highlighter(document.getElementById('first_name'))
-//         console.log(document.getElementById('first_name'))
-//     } else if (jsonResponse.error === "please enter valid last name!") {
-//         highlighter(document.getElementById('last_name'))
-//         console.log(document.getElementById('last_name'))
-//     } else if (jsonResponse.error === "please enter valid last name!") {
-//         highlighter(document.getElementById('last_name'))
-//         console.log(document.getElementById('last_name'))
-//     }
-// }
