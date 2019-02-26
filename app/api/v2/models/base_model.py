@@ -65,7 +65,7 @@ class BaseModel:
         name = name if name else self.table_name
 
         return self.database.fetch_all(
-            "SELECT {} FROM {} WHERE {};".format(cols, name, condition)
+            "SELECT row_to_json({}) FROM {} WHERE {};".format(cols, name, condition)
         )
 
 

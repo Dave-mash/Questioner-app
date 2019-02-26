@@ -11,11 +11,21 @@ v2 = Blueprint('meetupv2', __name__, url_prefix='/api/v2/')
 """ This route performs a get request to fetch all upcoming meetups """
 @v2.route("/meetups/upcoming", methods=['GET'])
 def get_all_meetups():
-    meetups = Meetup().fetch_meetups('(authorId, topic, description, location)')
+    meetups = Meetup().fetch_meetups('(topic, description, schedule, location, tags, images, createdOn)')
     meetups_list = []
 
     for meetup in meetups:
-        meetups_list.append(meetup[0])
+        
+        meetup_item = {
+            "topic": meetup[0]['f1'],
+            "description": meetup[0]['f2'],
+            "schedule": meetup[0]['f3'],
+            "location": meetup[0]['f4'],
+            "tags": meetup[0]['f5'],
+            "images": meetup[0]['f6'],
+            "createdOn": "select "
+        }
+        meetups_list.append(meetup_item)
 
     return make_response(jsonify({
         "status": 200,

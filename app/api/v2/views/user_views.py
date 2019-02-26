@@ -2,6 +2,7 @@
 This module defines all the user endpoints
 """
 import json
+import re
 from flask import request, jsonify, make_response, Blueprint
 
 from app.api.v2.models.user import User
@@ -80,8 +81,9 @@ def login():
         return make_response(jsonify(missing_fields), 400)
 
     validate_user = UserValidator(data)
+    reg_email = re.compile(r"^[A-Za-z0-9\.\+_-]+@[A-Za-z0-9\._-]+\.[a-zA-Z]*$")
 
-    if validate_user.valid_email():
+    if not re.match(reg_email, str(data['email'])):
         return make_response(jsonify({
             "error": validate_user.valid_email()
         }), 422)

@@ -3,6 +3,7 @@ This module sets up the meetups model and all it's functionality
 """
 
 import os
+import json
 from flask import jsonify
 
 from app.api.v2.models.base_model import BaseModel, AuthenticationRequired
@@ -61,7 +62,8 @@ class Meetup(BaseModel):
     def fetch_meetups(self, fields):
         """ This method fetches all meetups """
 
-        return self.base_model.grab_all_items(f'{fields}', "True = True")
+        meetups = self.base_model.grab_all_items(f'{fields}', "True = True")
+        return meetups
     
 
     def fetch_specific_meetup(self, column, condition):

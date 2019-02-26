@@ -56,9 +56,7 @@ form input {
 }
 
 #error_message {
-    display: none;
     width: 100%;
-    font-weight: bold;
     color: red;
     letter-spacing: 0;
     text-align: center;

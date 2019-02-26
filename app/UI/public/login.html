@@ -18,11 +18,12 @@
                 </div>
                 <div class="form_wrapper">
                     <p id="signup-info">Log in to access your profile</p>
-                    <form class="form-details">
+                    <form class="form-details" id="login-form">
                         <label for="email">Email <b>*</b></label>
-                        <input type="email">
+                        <input name="email" type="email" id="email">
                         <label for="password">Password <b>*</b></label>
-                        <input type="password">
+                        <input name="password" type="password" id="password">
+                        <span id="error_span"></span>
                         <button id="submit">Submit</button>
                         <p id="login_link">Don't have an account? <a href="signup.html">sign up</a> instead</p>
                     </form>
@@ -33,5 +34,6 @@
         <footer>&copy; Questioner 2019</footer>
     </div>
     <img src="../images/avatar.png" alt="background avatar" id="background_img">
+    <script src="./scripts/login.js"></script>
 </body>
 </html>
