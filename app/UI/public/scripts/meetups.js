@@ -49,6 +49,7 @@ fetch('http://127.0.0.1:5000/api/v2/meetups/upcoming').then(res => {
     }
 
     jsonResponse.meetups.forEach(meetup => {
-        meetupItem(meetup['topic'], meetup['description'])
+        meetupItem(meetup['topic'], "This is arbitrary. Description coming soon")
     });
 });
+

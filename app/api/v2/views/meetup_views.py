@@ -23,7 +23,7 @@ def get_all_meetups():
             "location": meetup[0]['f4'],
             "tags": meetup[0]['f5'],
             "images": meetup[0]['f6'],
-            "createdOn": "select "
+            "createdOn": meetup[0]['f7']
         }
         meetups_list.append(meetup_item)
 
@@ -46,7 +46,7 @@ def post_a_meetup(adminId):
         validate_question = MeetupValidator(data)
         validation_methods = [
             validate_question.data_exists,
-            # validate_question.valid_description,
+            validate_question.valid_description,
             validate_question.valid_location,
             validate_question.valid_tags,
             validate_question.valid_title

@@ -43,15 +43,15 @@ class MeetupValidator:
             return 'You missed a required field'
 
     def valid_title(self):
-        if not self.title.isalpha():
+        if isinstance(self.description, int):
             return self.errorHandler("title")
         elif len(self.title) < 3:
             return 'Your title is too short!'
-        elif len(self.title) > 30:
+        elif len(self.title) > 100:
             return 'Your title is too long!'
 
     def valid_description(self):
-        if not self.description.isalpha():
+        if isinstance(self.description, int):
             return self.errorHandler('description')
         elif len(self.description) < 5:
             return 'Your description is too short'
