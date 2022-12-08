@@ -19,7 +19,7 @@
   "homepage": "https://github.com/Dave-mash/Questioner-app#readme",
   "dependencies": {
     "eslint": "^5.14.1",
-    "express": "^4.16.4",
+    "express": "^4.18.2",
     "nodemon": "^1.18.10"
   }
 }
